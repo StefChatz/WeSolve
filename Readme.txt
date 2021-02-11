@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+This repository was created for the WeSolve group.
 
-Template Name: Tempo
-Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Developed by: Stefanos Chatzakis
