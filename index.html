@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- <title>weso Bootstrap Template - Index</title> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">  
+  <link href="'https://fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin-ext'" rel="stylesheet">  
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <h1 class="logo"><a href="index.html">WeSolve</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li><a href="#portfolio">Projects</a></li> -->
+          <li class="drop-down"><a href="/projects.html">Projects</a>
+            <ul>
+              
+              <li class="drop-down"><a href="#">UniForm</a>
+                <ul>
+                  <li><a href="#">UniForm ΝΟΠΕ</a></li>
+                  <li><a href="#">UniForm Παντείου</a></li>
+                </ul>
+              </li>
+              <li><a href="#">ProBono</a></li>
+            </ul>
+          </li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Join us</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <!-- <h3><strong>WeSolve</strong></h3> -->
+      <h1 class="ml12" style="font-family: 'Lato', sans-serif;">Απο τη θεωρια στην πραξη</h1>
+      <script>
+
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+        anime.timeline({loop: false})
+          .add({
+            targets: '.ml12 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 500 + 30 * i
+          })
+          // .add({
+          //   targets: '.ml12 .letter',
+          //   translateX: [0,-30],
+          //   opacity: [1,0],
+          //   easing: "easeInExpo",
+          //   duration: 1100,
+          //   delay: (el, i) => 100 + 30 * i
+          // });
+      </script>
+      <style>
+        .ml12 {
+          font-weight: 200;
+          font-size: 2.8em;
+          /* text-transform: lowerca; */
+          letter-spacing: 0.2em;
+        }
+
+        .ml12 .letter {
+          display: inline-block;
+          line-height: 1em;
+        }
+      </style>
+    </br>
+      <div style="padding-top: 100px;"></div>
+      <h2 class="ml3">Ένα Think Tank, με σκοπό την ενθάρρυνση του ανοιχτού διαλόγου και της δημόσιας συζήτησης</h2>
+
+      <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+          .add({
+            targets: '.ml3 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 10 * (i+1)
+          })
+          // .add({
+          //   targets: '.ml3',
+          //   opacity: 0,
+          //   duration: 1000,
+          //   easing: "easeOutExpo",
+          //   delay: 1000
+          // });
+      </script>
+      <a href="#about" class="btn-get-started scrollto">Get Involved</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <h3 style="font-size: 3rem;">Μάθετε περισσότερα <span>για εμάς</span></h3>
+          <p>Όλοι νίωθουμε ανήμποροι όταν προσπαθούμε να λύσουμε μεγάλα προβλήματα μόνοι. Γι'αυτό δημιουργήσαμε την <strong>WeSolve:</strong> για να τα λύνουμε παρέα.</p>
+        </div>
+
+        <div class="row content">
+          
+          <div class="col-lg-6">
+            
+            
+            <!-- <img src="assets/img/about2.jpg" class="img-fluid" alt=""> -->
+            <img src="assets/img/bg_1.jpg" style= "border-radius: 20px; box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);" class="img-fluid" alt="">
+            
+
+            
+            <!-- <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+
+          <h3>Ποιοί είμαστε</h3>
+
+            <p style="font-size: 1.3rem;">
+              Πώς ξεκίνησε άραγε το WeSolve; Η απάντηση βρίσκεται στην κατάσταση που επικρατεί γύρω μας. 
+              Αυτή το δημιούργησε. Μία νοοτροπία να προσεγγίζουμε τα πάντα θεωρητικά, 
+              μένοντας στο 'τι' και όχι στο 'πώς' θα κάνουμε κάτι. Αυτή η ανάγκη ύπαρξης ενός φορέα 
+              που κατατεινει στην πρόταση απτών, υλοποιήσιμων, μετρήσιμων και ρεαλιστικών λύσεων, οδήγησε στη 
+              δημιουργία του WeSolve. Ξεκινήσαμε λοιπόν, θέτοντας στο επίκεντρο τον φοιτητή, 
+              στηριζόμενοι στο όραμά του να αλλάξει τον κόσμο, 
+              υπενθυμίζοντας συγχρόνως ότι η μεγαλύτερη τιμή για έναν φοιτητή, είναι ακριβώς ότι έχει την ιδιότητα του φοιτητή. 
+              Ξεκινάμε λοιπόν να αλλάξουμε νοοτροπίες, καταστάσεις, προβλήματα. Όλοι μαζί WeSolve!
+            </p>
+            <!-- Button trigger modal -->
+            <!-- <a href="#" class="btn-learn-more" data-toggle="modal" data-target="#exampleModal">More</a> -->
+            
+
+          </div>
+        </div>
+        <section style="border-top: 1px;">
+        <div class="row content">
+          <div style="padding-top: 20px;"></div>
+          <div style="padding-bottom: 2vh;" class="col-lg-6">
+            
+            <!-- <img src="assets/img/about3.jpg" class="img-fluid" alt=""> -->
+            <h3>Γιατί <strong>WeSolve</strong>;</h3>
+            
+
+            <p style="font-size: 1.3rem;">
+              Στόχο του WeSolve αποτελεί ο εντοπισμός των προβλημάτων που ταλαιπωρούν την ελληνική κοινωνία,σε πρώτη φάση στο ελληνικό πανεπιστήμιο, και η εξεύρεση πρακτικών λύσεων μέσα από διαδικασίες διαβούλευσης καθώς και η υλοποίηση αυτών την λύσεων. Με άλλα λόγια στόχος μας είναι η ονομασία μας : WeSolve = Μαζί Επιλύουμε (ό,τι μας πηγαίνει πίσω και ασχημαίνει την καθημερινότητα μας)
+            </p>
+            <a href="#team" class="btn-learn-more scrollto">Team</a>
+          </div>          
+          
+          <div class="col-lg-6">
+            
+            <img src="assets/img/about3.jpg" style= "border-radius: 20px; box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);" class="img-fluid" alt="">
+          </div>
+          
+        </div>
+      </section>    
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Χορηγοι</h2>
+          <h3>Δεν θα μπορούσαμε να το κάνουμε αυτό χωρίς τη βοήθεια των <span>χορηγών μας</span>:</h3>
+          <!-- <p>Ut possimus qui ut wesolveribus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon">
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <a href="https://mitropolitiko.edu.gr/el/" target="_blank"></a><img src="assets/img/mitropolitiko-logo.png" class="img-fluid" alt="">
+              </div>
+              <!-- <p class="title">ΜΗΤΡΟΠΟΛΙΤΙΚΟ ΚΟΛΛΕΓΙΟ</a></h4> -->
+              <!-- <p class="description"><a>deleniti atque corrupti quos dolores et quas molestias excepturi</a></p> -->
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon">
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <a href="https://www.iriotislaw.gr/" target="_blank"><img src="assets/img/logo_iriotis_footer_blue.png" class="img-fluid" alt=""></a>
+              </div>
+              <!-- <p class="title"><a href="https://www.iriotislaw.gr/" target="_blank">Ioannis Th. Iriotis Law Firm</a></h4> -->
+              <!-- <p class="description"><a>deleniti atque corrupti quos dolores et quas molestias excepturi</a></p> -->
+            </div>
+          </div>
+
+          
+
+          <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Features Section ======= -->
+    <!-- <section id="features" class="features">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-6 col-6">
+            <div class="icon-box">
+              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+              <h3><a href="">Lorem Ipsum</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+              <h3><a href="">Dolor Sitema</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+              <h3><a href="">Sed perspiciatis</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+              <h3><a href="">Magni Dolores</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <h3><a href="">Nemo Enim</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+              <h3><a href="">Eiusmod wesolver</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <h3><a href="">Midela Teren</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+              <h3><a href="">Pira Neve</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-anchor-line" style="color: #b2904f;"></i>
+              <h3><a href="">Dirada Pack</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-disc-line" style="color: #b20969;"></i>
+              <h3><a href="">Moton Ideal</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-base-station-line" style="color: #ff5828;"></i>
+              <h3><a href="">Verdo Park</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+              <h3><a href="">Flavor Nivelanda</a></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>End Features Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Join us</h3>
+          <p>Γίνε μέλος του WeSolve, για να λαμβάνεις όλα τα νέα μας μέσω Newsletter. Γιατί να γίνεις μέλος; (αν πατάς πάνω του να σου βγάζει τους λόγους για να γίνεις μέλος) 
+          </p>
+          <a class="cta-btn scrollto" href="#contact">Join us</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <h3>Check our <span>Portfolio</span></h3>
+          <p>Ut possimus qui ut wesolveribus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <h3>Our Competing <span>Prices</span></h3>
+          <p>Ut possimus qui ut wesolveribus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended">
+              <span class="recommended-badge">Recommended</span>
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div> -->
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <!-- <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <a data-bs-toggle="collapse" class="" data-bs-target="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-bs-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Ac odio wesolver orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section> -->
+    <!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our <span>Directors</span></h3>
+          <!-- <p>Ut possimus qui ut wesolveribus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <a href="#" data-toggle="modal" data-target="#thanosModal">
+                <img src="assets/img/team/Thanos.jpg" class="img-fluid" alt="">
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="thanosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" data-backdrop="static" role="document">
+                    <div class="modal-content rounded-0">
+                      <div class="row content">
+                        <div class="col-4 modal_img ">
+                          <img src="assets/img/team/1-Θάνος_Γεωργούντζος-removebg-preview.png" style="" class="img-fluid" alt="">
+                          <div class="d-flex justify-content-center">
+                            <div style="padding: 10px;">
+
+                              <h4 style="padding-top:40px; font-size:2vh; font-weight: bold; padding-bottom: 20px;">Co-Founder & Executive Director</h4>
+                              <a href="#" class="linkedin"><img src="assets/img/linkedin.svg" style="height: 36px; background-color: white;"/></a>
+                              <a href="#" class="linkedin" style="padding-left: 15px;"><img src="assets/img/square.svg" style="background-color:#ff6600; height: 36px; border-radius: 4px; "/></a>
+                            
+                            </div>
+                          </div>
+                      
+                        </div>
+                        <div class="col modal-text">
+                          <!-- <div class="modal-header">
+                            <h5 class="modal-title">Θάνος Γεωργούντζος</h5>
+                          </div> -->
+                          <!-- <img src="assets/img/Modern Abstract Shapes Background White-01.jpg" style="background-blend-mode: lighten;"class="img-fluid" alt=""> -->
+
+                          <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                            Ο <strong>Θάνος Γεωργούντζος</strong> είναι φοιτητής της Νομικής Σχολής Αθηνών, ενώ
+                            παράλληλα σπουδάζει Οικονομικά στο Αμερικανικό Κολλέγιο Ελλάδος (Deree), με
+                            υποτροφία του Ιδρύματος Σταύρος Νιάρχος. Αποφοίτησε πρώτος από το Αρσάκειο
+                            Κλασικό Λύκειο Ψυχικού και σε όλο τον κύκλο των σπουδών του ασχολείται με
+                            ποικίλες δράσεις νομικού, πολιτικού και επιχειρηματικού ενδιαφέροντος.
+                          </p>
+                          <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                            Θέλοντας να εμβαθύνει στο αντικείμενο των σπουδών του, έκανε πρακτική άσκηση
+                            στο δικηγορικό γραφείο «Ιωάννης Θ. Ηρειώτης και Συνεργάτες», στο γραφείο του
+                            Καθηγητή Ποινικού Δικαίου και Ποινικής Δικονομίας «Ηλίας Γ. Αναγνωστόπουλος»,
+                            καθώς και στο γραφείο «PPT Legal Law Firm», πρώην «Vgenopoulos & Partners».
+                            Παράλληλα, συμμετείχε στον Εθνικό Διαγωνισμό Εικονικής Δίκης στην Πολιτική
+                            Δικαιοδοσία, εκπροσωπώντας επάξια την Νομική Σχολή Αθηνών.
+                          </p>
+                          <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                            Επιπλέον, ευαισθητοποιημένος στο χώρο της εκπαίδευσης, υπηρέτησε εθελοντικά
+                            τον εκπαιδευτικό οργανισμό Afixis, συμβάλλοντας στην διοργάνωση
+                            προγραμμάτων όπως το «Μοντέλο Βουλής των Ελλήνων» και οι «Εικονικές Δίκες
+                            Πρωταγόρας». Ακόμη, ασχολήθηκε ενεργά με την Ευρωπαϊκή Ένωση Νέων Νομικών
+                            Αθήνας (ELSA), ένα πανευρωπαϊκό δίκτυο νομικών - ακαδημαϊκών και δικηγόρων -
+                            διοργανώνοντας ημερίδες, σεμινάρια και συνέδρια, με στόχο την ανάδειξη της
+                            νομικής επιστήμης σε όλες τις εκφάνσεις της.
+                          </p>
+                          <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                            Είναι κάτοχος των ανώτερων διπλωμάτων Αγγλικής και Γαλλικής γλώσσας.
+                          </p>
+                          <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                            Ο Θάνος είναι <strong>Co-Founder</strong> και <strong>Executive Director</strong> του </strong>WeSolve</strong>. Είναι υπεύθυνος
+                            για τον γενικό συντονισμό, την επικοινωνία και την επέκταση του οργανισμού.
+                            Στόχος του είναι το <strong>WeSolve</strong> να εξελιχθεί από μία δυναμική ομάδα της Αθήνας σε
+                            ένα πανελλήνιο δίκτυο νέων που θα αναδείξουν την αξία της πράξης έναντι της
+                            θεωρίας.
+                          </p>
+                        </div>
+                        
+                      </div>
+
+                      <div class="modal-footer">
+                        
+                        <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 5vh ;">
+
+                      </div>
+                      <!-- <div class="modal-footer " style=" background-color: #f6f4f4;">
+                        <div class="me-md-auto text-center text-md-start">
+
+                        </div>
+                      </div> -->
+                      <!-- <div class="d-flex modal_footer justify-content-between">
+                        <div class="d-flex">
+                          <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 5vh ;">
+                        </div>
+                      <div class="social-links text-md-right pt-3 pt-md-0" >
+                        <a href="#" class="twitter"><i class="bx bxl-twitter" style="height: 20px; width: 20px;"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                      </div>
+                    </div> -->
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+                <div class="social">
+
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Θάνος Γεωργούντζος</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <a href="#" data-toggle="modal" data-target="#thanosModal">
+                  <img src="assets/img/team/Thanos.jpg" class="img-fluid" alt="">
+                  </a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="thanosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" data-backdrop="static" role="document">
+                      <div class="modal-content rounded-0">
+                        <div class="row content">
+                          <div class="col-4 modal_img ">
+                            <img src="assets/img/team/1-Θάνος_Γεωργούντζος-removebg-preview.png" style="" class="img-fluid" alt="">
+                            <div class="d-flex justify-content-center">
+                              <div style="padding: 10px;">
+  
+                                <h4 style="padding-top:40px; font-size:2vh; font-weight: bold; padding-bottom: 20px;">Co-Founder & Executive Director</h4>
+                                <a href="#" class="linkedin"><img src="assets/img/linkedin.svg" style="height: 36px; background-color: white;"/></a>
+                                <a href="#" class="linkedin" style="padding-left: 15px;"><img src="assets/img/square.svg" style="background-color:#ff6600; height: 36px; border-radius: 4px; "/></a>
+                              
+                              </div>
+                            </div>
+                        
+                          </div>
+                          <div class="col modal-text">
+                            <!-- <div class="modal-header">
+                              <h5 class="modal-title">Θάνος Γεωργούντζος</h5>
+                            </div> -->
+                            <!-- <img src="assets/img/Modern Abstract Shapes Background White-01.jpg" style="background-blend-mode: lighten;"class="img-fluid" alt=""> -->
+  
+                            <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                              Ο <strong>Θάνος Γεωργούντζος</strong> είναι φοιτητής της Νομικής Σχολής Αθηνών, ενώ
+                              παράλληλα σπουδάζει Οικονομικά στο Αμερικανικό Κολλέγιο Ελλάδος (Deree), με
+                              υποτροφία του Ιδρύματος Σταύρος Νιάρχος. Αποφοίτησε πρώτος από το Αρσάκειο
+                              Κλασικό Λύκειο Ψυχικού και σε όλο τον κύκλο των σπουδών του ασχολείται με
+                              ποικίλες δράσεις νομικού, πολιτικού και επιχειρηματικού ενδιαφέροντος.
+                            </p>
+                            <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                              Θέλοντας να εμβαθύνει στο αντικείμενο των σπουδών του, έκανε πρακτική άσκηση
+                              στο δικηγορικό γραφείο «Ιωάννης Θ. Ηρειώτης και Συνεργάτες», στο γραφείο του
+                              Καθηγητή Ποινικού Δικαίου και Ποινικής Δικονομίας «Ηλίας Γ. Αναγνωστόπουλος»,
+                              καθώς και στο γραφείο «PPT Legal Law Firm», πρώην «Vgenopoulos & Partners».
+                              Παράλληλα, συμμετείχε στον Εθνικό Διαγωνισμό Εικονικής Δίκης στην Πολιτική
+                              Δικαιοδοσία, εκπροσωπώντας επάξια την Νομική Σχολή Αθηνών.
+                            </p>
+                            <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                              Επιπλέον, ευαισθητοποιημένος στο χώρο της εκπαίδευσης, υπηρέτησε εθελοντικά
+                              τον εκπαιδευτικό οργανισμό Afixis, συμβάλλοντας στην διοργάνωση
+                              προγραμμάτων όπως το «Μοντέλο Βουλής των Ελλήνων» και οι «Εικονικές Δίκες
+                              Πρωταγόρας». Ακόμη, ασχολήθηκε ενεργά με την Ευρωπαϊκή Ένωση Νέων Νομικών
+                              Αθήνας (ELSA), ένα πανευρωπαϊκό δίκτυο νομικών - ακαδημαϊκών και δικηγόρων -
+                              διοργανώνοντας ημερίδες, σεμινάρια και συνέδρια, με στόχο την ανάδειξη της
+                              νομικής επιστήμης σε όλες τις εκφάνσεις της.
+                            </p>
+                            <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                              Είναι κάτοχος των ανώτερων διπλωμάτων Αγγλικής και Γαλλικής γλώσσας.
+                            </p>
+                            <p style="text-align: justify; padding: 10px; font-size: 20px;">
+                              Ο Θάνος είναι <strong>Co-Founder</strong> και <strong>Executive Director</strong> του </strong>WeSolve</strong>. Είναι υπεύθυνος
+                              για τον γενικό συντονισμό, την επικοινωνία και την επέκταση του οργανισμού.
+                              Στόχος του είναι το <strong>WeSolve</strong> να εξελιχθεί από μία δυναμική ομάδα της Αθήνας σε
+                              ένα πανελλήνιο δίκτυο νέων που θα αναδείξουν την αξία της πράξης έναντι της
+                              θεωρίας.
+                            </p>
+                          </div>
+                          
+                        </div>
+  
+                        <div class="modal-footer">
+                          
+                          <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 5vh ;">
+  
+                        </div>
+                        <!-- <div class="modal-footer " style=" background-color: #f6f4f4;">
+                          <div class="me-md-auto text-center text-md-start">
+  
+                          </div>
+                        </div> -->
+                        <!-- <div class="d-flex modal_footer justify-content-between">
+                          <div class="d-flex">
+                            <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 5vh ;">
+                          </div>
+                        <div class="social-links text-md-right pt-3 pt-md-0" >
+                          <a href="#" class="twitter"><i class="bx bxl-twitter" style="height: 20px; width: 20px;"></i></a>
+                          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                      </div> -->
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="social">
+  
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Θάνος Γεωργούντζος</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+              </div>
+            </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/nikos.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+        
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/maria.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/nikos.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        <!--  -->
+        <div class="section-title">
+          <!-- <h2>Team</h2> -->
+          <h3>Our <span>Managers</span></h3>
+          <!-- <p>Ut possimus qui ut wesolveribus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+        <div class="row justify-content-center">
+        <!--  -->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div>
+        </div>   
+        <!--  -->
+        <!--  -->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div>
+        </div>   
+        <!--  -->
+        <!--  -->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div>
+        </div>   
+        <!--  -->
+        </div>
+        
+        <div class="d-flex justify-content-center">
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #ff6600;"data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">More</button>
+        </div>
+        <div class="d-flex justify-content-center">
+        
+          <div class="row" style="padding-top: 20px;">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="row justify-content-center">
+                  <!--  -->
+                  <div class="col-lg-2 col-md-5 d-flex align-items-stretch">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="icofont-twitter"></i></a>
+                          <a href=""><i class="icofont-facebook"></i></a>
+                          <a href=""><i class="icofont-instagram"></i></a>
+                          <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <!-- <h4>Walter White</h4> -->
+                        <!-- <span>Chief Executive Officer</span> -->
+                        <!-- <p>Walter White</p> -->
+                      </div>
+                    </div>
+                  </div>   
+                  <!--  -->
+                  <!--  -->
+                  <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="icofont-twitter"></i></a>
+                          <a href=""><i class="icofont-facebook"></i></a>
+                          <a href=""><i class="icofont-instagram"></i></a>
+                          <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <!-- <h4>Walter White</h4> -->
+                        <!-- <span>Chief Executive Officer</span> -->
+                      </div>
+                    </div>
+                  </div>   
+                  <!--  -->
+                  <!--  -->
+                  <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="icofont-twitter"></i></a>
+                          <a href=""><i class="icofont-facebook"></i></a>
+                          <a href=""><i class="icofont-instagram"></i></a>
+                          <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <!-- <h4>Walter White</h4> -->
+                        <!-- <span>Chief Executive Officer</span> -->
+                      </div>
+                    </div>
+                  </div>   
+                  <!--  -->
+                  <!--  -->
+                  <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="icofont-twitter"></i></a>
+                          <a href=""><i class="icofont-facebook"></i></a>
+                          <a href=""><i class="icofont-instagram"></i></a>
+                          <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <!-- <h4>Walter White</h4> -->
+                        <!-- <span>Chief Executive Officer</span> -->
+                      </div>
+                    </div>
+                  </div>   
+                  <!--  -->
+                  <!--  -->
+                  <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                          <a href=""><i class="icofont-twitter"></i></a>
+                          <a href=""><i class="icofont-facebook"></i></a>
+                          <a href=""><i class="icofont-instagram"></i></a>
+                          <a href=""><i class="icofont-linkedin"></i></a>
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <!-- <h4>Walter White</h4> -->
+                        <!-- <span>Chief Executive Officer</span> -->
+                      </div>
+                    </div>
+                  </div>   
+                  <!--  -->
+
+                  
+                  </div>
+                  <div class="row justify-content-center">
+                    <!--  -->
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                      <div class="member">
+                        <div class="member-img">
+                          <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                          <h4>Walter White</h4>
+                          <span>Chief Executive Officer</span>
+                        </div>
+                      </div>
+                    </div>   
+                    <!--  -->
+                    <!--  -->
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                      <div class="member">
+                        <div class="member-img">
+                          <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                          <h4>Walter White</h4>
+                          <span>Chief Executive Officer</span>
+                        </div>
+                      </div>
+                    </div>   
+                    <!--  -->
+                    <!--  -->
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                      <div class="member">
+                        <div class="member-img">
+                          <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="icofont-twitter"></i></a>
+                            <a href=""><i class="icofont-facebook"></i></a>
+                            <a href=""><i class="icofont-instagram"></i></a>
+                            <a href=""><i class="icofont-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                          <h4>Walter White</h4>
+                          <span>Chief Executive Officer</span>
+                        </div>
+                      </div>
+                    </div>   
+                    <!--  -->
+                    </div>
+                    <div class="row justify-content-center">
+                      <!--  -->
+                      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                          <div class="member-img">
+                            <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="icofont-twitter"></i></a>
+                              <a href=""><i class="icofont-facebook"></i></a>
+                              <a href=""><i class="icofont-instagram"></i></a>
+                              <a href=""><i class="icofont-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                          </div>
+                        </div>
+                      </div>   
+                      <!--  -->
+                      <!--  -->
+                      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                          <div class="member-img">
+                            <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="icofont-twitter"></i></a>
+                              <a href=""><i class="icofont-facebook"></i></a>
+                              <a href=""><i class="icofont-instagram"></i></a>
+                              <a href=""><i class="icofont-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                          </div>
+                        </div>
+                      </div>   
+                      <!--  -->
+                      <!--  -->
+                      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member">
+                          <div class="member-img">
+                            <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="icofont-twitter"></i></a>
+                              <a href=""><i class="icofont-facebook"></i></a>
+                              <a href=""><i class="icofont-instagram"></i></a>
+                              <a href=""><i class="icofont-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
+                          </div>
+                        </div>
+                      </div>   
+                      <!--  -->
+                      </div>
+                      <div class="row justify-content-center">
+                        <!--  -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                          <div class="member">
+                            <div class="member-img">
+                              <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                              <div class="social">
+                                <a href=""><i class="icofont-twitter"></i></a>
+                                <a href=""><i class="icofont-facebook"></i></a>
+                                <a href=""><i class="icofont-instagram"></i></a>
+                                <a href=""><i class="icofont-linkedin"></i></a>
+                              </div>
+                            </div>
+                            <div class="member-info">
+                              <h4>Walter White</h4>
+                              <span>Chief Executive Officer</span>
+                            </div>
+                          </div>
+                        </div>   
+                        <!--  -->
+                        <!--  -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                          <div class="member">
+                            <div class="member-img">
+                              <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                              <div class="social">
+                                <a href=""><i class="icofont-twitter"></i></a>
+                                <a href=""><i class="icofont-facebook"></i></a>
+                                <a href=""><i class="icofont-instagram"></i></a>
+                                <a href=""><i class="icofont-linkedin"></i></a>
+                              </div>
+                            </div>
+                            <div class="member-info">
+                              <h4>Walter White</h4>
+                              <span>Chief Executive Officer</span>
+                            </div>
+                          </div>
+                        </div>   
+                        <!--  -->
+                        <!--  -->
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                          <div class="member">
+                            <div class="member-img">
+                              <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                              <div class="social">
+                                <a href=""><i class="icofont-twitter"></i></a>
+                                <a href=""><i class="icofont-facebook"></i></a>
+                                <a href=""><i class="icofont-instagram"></i></a>
+                                <a href=""><i class="icofont-linkedin"></i></a>
+                              </div>
+                            </div>
+                            <div class="member-info">
+                              <h4>Walter White</h4>
+                              <span>Chief Executive Officer</span>
+                            </div>
+                          </div>
+                        </div>   
+                        <!--  -->
+                        </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="section-title">
+        <!-- <h2>Team</h2> -->
+        <h3>Our <span>Advisors</span></h3>
+        <!-- <p>Ut possimus qui ut wesolveribus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+      </div>
+      <div class="row justify-content-center">
+      <!--  -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+          </div>
+        </div>
+      </div>   
+      <!--  -->
+      <!--  -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+          </div>
+        </div>
+      </div>   
+      <!--  -->
+      <!--  -->
+      <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+          </div>
+        </div>
+      </div>   
+      <!--  -->
+       <!--  -->
+       <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+          </div>
+        </div>
+      </div>   
+      <!--  -->
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Join</h2>
+          <h3>Join <span>Us</span></h3>
+          <p>Just fill out this form and we'll get in touch with you soon.</p>
+          <p>We already have <a id="result">0</a> members signed up!</p>
+        </div>
+
+        <!-- <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7480.49040940187!2d23.730794045361506!3d37.973423561968595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3f23106f35%3A0xd6eee05d0dfbca4d!2zzpLOv8-FzrvOriDPhM-Jzr0gzpXOu867zq7Ovc-Jzr0!5e0!3m2!1sel!2sgr!4v1610134490222!5m2!1sel!2sgr" frameborder="0" allowfullscreen></iframe>
+
+        </div> -->
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <!-- <i class="icofont-google-map"></i> -->
+                <!-- <h4>Location:</h4> -->
+                <!-- <p>Λεωφ. Βασιλίσσης Σοφίας 5, Αθήνα 106 71</p> -->
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>wesolve@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+30 6983753499</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button onclick="clickCounter()" type="submit">Join us</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>We Solve</h3>
+            <p>
+              Λεωφ. Βασιλίσσης Σοφίας 5<br>
+              Αθήνα<br>
+              Ελλάδα <br><br>
+              <strong>Phone:</strong> +30 6983753499<br>
+              <strong>Email:</strong> wesolve@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>WeSolve</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/wesolve-free-onepage-bootstrap-theme/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script>
+  function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("result").innerHTML = localStorage.clickcount;
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+  </script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
