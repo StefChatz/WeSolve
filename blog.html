@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/Untitled-1.svg" type="image/x-icon"/>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -24,15 +23,19 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Tempo - v3.0.0
-  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myDIV *").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
 </head>
 
 <body>
@@ -108,13 +111,13 @@
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
       <div class="container">
-
+      
         <div class="row">
-
+          
           <div class="col-lg-8 entries">
 
             <div class="row">
-
+            <div id= "myDiv">
               <div class="col-md-6 d-flex align-items-stretch">
                 <article class="entry">
 
@@ -293,7 +296,7 @@
 
                 </article><!-- End blog entry -->
               </div>
-
+            </div>
             </div>
 
             <div class="blog-pagination">
@@ -315,7 +318,7 @@
               <h3 class="sidebar-title">Search</h3>
               <div class="sidebar-item search-form">
                 <form action="">
-                  <input type="text">
+                  <input id="myInput" type="text">
                   <button type="submit"><i class="icofont-search"></i></button>
                 </form>
 
@@ -381,7 +384,7 @@
           </div><!-- End blog sidebar -->
 
         </div>
-
+     
       </div>
     </section><!-- End Blog Section -->
 
