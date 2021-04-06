@@ -2083,7 +2083,7 @@ section {
   background-color: white;
   background-size: cover;
 }
-@media (max-width: 376px) {
+@media (max-width: 750px) {
   .modal-dialog{
     max-width: 100vw;
   }
@@ -2092,7 +2092,7 @@ section {
   }
 
 }
-@media (min-width: 376px) {
+@media (min-width: 750px) {
   .modal_footer {
     padding: 10px;
   }
