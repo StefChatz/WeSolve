@@ -2082,6 +2082,7 @@ section {
   background-repeat: no-repeat;
   background-color: white;
   background-size: cover;
+
 }
 @media (max-width: 750px) {
   .modal-dialog{
@@ -2089,6 +2090,10 @@ section {
   }
   .col-4 {
     width: 100%;
+  }
+  .modal-content {
+    padding: 10px;
+    margin: 20px;
   }
 
 }
@@ -2104,13 +2109,16 @@ section {
   .modal-dialog{
     max-width: 70vw;
   }
+  .modal-content {
+    padding: 60px;
+  }
+  
 }
 .modal-dialog {
   /* border: 10px solid #ff6600; */
   border-radius: 0px; 
 }
 .modal-content {
-  padding: 60px;
   border: none;
 }
 .modal-footer {
