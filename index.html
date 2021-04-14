@@ -37,7 +37,7 @@
 
 </head>
 
-<body>
+<body onload="revealCounter()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -2428,7 +2428,7 @@
           <h2>Join</h2>
           <h3>Join <span>Us</span></h3>
           <p>Συμπληρώστε την φόρμα και θα επικοινωνίσουμε μαζί σας σύντομα.</p>
-          <p>Έχουμε ήδη <a id="result" style="color: #ff6600;">50</a> μέλη!</p>
+          <p>Έχουμε ήδη <a id="result" style="color: #ff6600;"></a> μέλη!</p>
         </div>
 
         <!-- <div>
@@ -2618,6 +2618,13 @@
       } else {
         localStorage.clickcount = 1;
       }
+      document.getElementById("result").innerHTML = localStorage.clickcount;
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+  function revealCounter() {
+    if (typeof(Storage) !== "undefined") {
       document.getElementById("result").innerHTML = localStorage.clickcount;
     } else {
       document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
